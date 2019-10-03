@@ -1,10 +1,12 @@
 /*
- * IS4010 Fal 2019
+ * IS4010 Fall 2019
  * Assignment 05
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+ * Austin Miller
+ * mille5au@mail.uc.edu
  */
 package footballFun;
+
+import java.util.Scanner;
 
 public class FootballFun {
 
@@ -26,6 +28,15 @@ public class FootballFun {
 		}
 	}
 	public static String translateScore (int score) {
+		if (score == 2) {return "safety";} // Returns string 'safety' if score is 2
+		if (score == 3) {return "field goal";} // Returns string 'field goal' if score is 3
+		if (score == 6) {return "touchdown";} // Returns string 'touchdown' if score is 6
+		if (score == 7) {return "touchdown and extra point";} // Returns string 'touchdown and extra point' if score is 7
+		if (score == 8) {return "touchdown and 2-point conversion";} // Returns string 'touchdown and 2-point conversion' if score is 8
+		if (score == -1) {return "";} // Returns empty string if score is -1
+		if (score == 1) {return "invalid";} // Returns string 'invalid' if score is 1
+		if (score == 10) {return "you must be playing Quidditch ";} // Returns string 'you must be playing Quidditch ' if score is 10
+		else
 		return "";
 	}
 }
